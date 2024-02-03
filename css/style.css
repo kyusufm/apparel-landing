@@ -15,6 +15,7 @@ body {
     display: flex;
     height: 100vh;
     justify-content: center;
+    background-color: var(--linearone);
 }
 
 h1 {
@@ -63,15 +64,15 @@ main {
 }
 
 .title {
-    font-size: 3em;
+    font-size: 4em;
     text-transform: uppercase;
     letter-spacing: 16px;
-    font-weight: 100;
+    font-weight: 300;
     padding-bottom: 0;
     color: var(--dered);
 }
 .subtitle {
-    font-size: 3em;
+    font-size: 4em;
     color: var(--dgred);
     text-transform: uppercase;
     letter-spacing: 16px;
@@ -79,9 +80,9 @@ main {
     line-height: 1.2em;
 }
 .copy {
-    font-size: 1em;
+    font-size: 16px;
     color: var(--dered);
-    font-weight: 300;
+    font-weight: 500;
     line-height: 2em;
     padding-bottom: 24px;
 }
