@@ -44,12 +44,14 @@ main {
     width: 57.5%;
     background: url('../images/bg-pattern-desktop.svg');
     background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 .right {
     width: 42.5%;
     overflow: hidden;
     background: url('../images/mob.jpg') no-repeat ;
+    background-size: cover;
 
 }
 
