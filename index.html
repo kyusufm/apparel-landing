@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Base Apparel coming soon page ~ Yusuf K.</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+    <section class="left">
+        
+        <div class="welcome">
+            <header>
+                <img src="images/logo.svg" alt="base Apparel" srcset="" class="logo">
+            </header>
+            <div class="main-image">
+                <img src="images/desktop.jpg" alt="welcome image" srcset="" class="hero-mobile">
+            </div>
+            <h1 class="title">We're </h1>
+            <h1 class="subtitle">coming soon</h1>
+            <p class="copy">Hello fellow shoppers! We're currently building our new fashion store. 
+                Add your email below to stay up-to-date with announcements and our launch deals.
+            </p>
+            <div class="signup">
+                <input type="email" name="user-email" id="user-email" placeholder="Email Address">
+                <span id="warning-message">Please provide a valid email</span>
+                <div class="warning" id="warning-container">
+                    <img src="images/icon-error.svg" alt="warning icon" height="20">
+                </div>
+                <button> <img src="images/icon-arrow.svg" alt="arrow icon" srcset=""> </button>
+            </div>
+        </div>
+    </section>
+    <section class="right">
+        <!-- <img src="images/mob.jpg" alt="welcome image" srcset="" class="hero-desktop"> -->
+    </section>
+</main>
+
+  <!-- <footer>
+    <p class="attribution">
+      Coded by <a href="#">Yusu K. Muhammad</a>.
+    </p>
+  </footer> -->
+  <script>
+    document.getElementById('user-email').addEventListener('input', function () {
+        const emailInput = this;
+        const warningContainer = document.getElementById('warning-container');
+        const warningMessage = document.getElementById('warning-message');
+
+        if (!emailInput.checkValidity()) {
+            // Invalid email address
+            warningContainer.style.display = 'block';
+            warningMessage.style.display = 'block';
+        } else {
+            // Valid email address
+            warningContainer.style.display = 'none';
+            warningMessage.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
